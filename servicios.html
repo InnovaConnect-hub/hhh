@@ -3,100 +3,254 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catálogo de Servicios | SubliArt</title>
+    <title>Catálogo de Productos | Two Ink</title>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/20260409t_8.57.21_1.png">
 </head>
 <body>
-<div class="fondo-artistico"></div>
 
     <nav class="nav-principal">
         <div class="logo">
-            <img src="img/20260409t_8.57.21_1.png" alt="Two Ink Logo" style="height: 50px; width: auto;">
+            <a href="index.html">
+                <img src="img/20260409t_8.57.21_1.png" alt="Two Ink Logo" style="height: 45px;">
+            </a>
         </div>
         
         <button class="menu-hamburguesa" aria-label="Abrir menú">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="3" y1="12" x2="21" y2="12"></line>
-                <line x1="3" y1="6" x2="21" y2="6"></line>
-                <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
         </button>
 
         <ul class="nav-enlaces">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="index.html">Contacto</a></li>
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="index.html#nosotros">Nosotros</a></li>
+            <li><a href="servicios.html" style="color: var(--texto-principal);">Servicios</a></li>
+            <li><a href="index.html#productos">Productos</a></li>
+            <li><a href="index.html#portafolio">Portafolio</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
         </ul>
+
+        <a href="index.html#contacto" class="btn-acento nav-btn">Cotizar ahora</a>
     </nav>
 
-    <section class="contenedor">
-        <h1 class="titulo-seccion pop-in">Catálogo de <span class="color-text">Productos</span></h1>
-        <p style="text-align: center; font-size: 1.2rem; margin-bottom: 40px;" class="pop-in delay-1">Conoce nuestras opciones de personalización, características y precios.</p>
-        
-        <div class="grid-servicios">
+    <section class="seccion-header pop-in" style="margin-top: 80px; margin-bottom: 40px;">
+        <h1 class="titulo-seccion">Catálogo de <span class="color-text">Productos</span></h1>
+        <p style="color: var(--texto-secundario); font-size: 1.1rem; margin-top: 15px;">Conoce nuestras opciones de personalización, características y precios.</p>
+    </section>
+
+    <section class="contenedor" style="padding-top: 0;">
+        <div class="grid-3">
             
-            <div class="card pop-in delay-1">
-                <div class="icono-servicio">
+            <div class="card-precio pop-in">
+                <div class="icono-precio cian">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M17 8h1a4 4 0 1 1 0 8h-1"></path>
-                        <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"></path>
-                        <line x1="6" y1="2" x2="6" y2="4"></line>
-                        <line x1="10" y1="2" x2="10" y2="4"></line>
-                        <line x1="14" y1="2" x2="14" y2="4"></line>
+                        <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                        <line x1="6" y1="1" x2="6" y2="4"></line>
+                        <line x1="10" y1="1" x2="10" y2="4"></line>
+                        <line x1="14" y1="1" x2="14" y2="4"></line>
                     </svg>
                 </div>
                 <h3>Taza Blanca 11oz</h3>
-                <p class="precio" style="font-size: 2rem; font-weight: 700; color: var(--acento); margin: 15px 0;">$80 MXN</p>
-                <ul style="text-align: left; margin-bottom: 20px; line-height: 1.8; list-style-position: inside;">
-                    <li>✔ Cerámica de alta calidad</li>
-                    <li>✔ Resistente al microondas</li>
-                    <li>✔ Impresión a todo color</li>
-                    <li>✔ Caja individual incluida</li>
+                <div class="precio">$80 <span>MXN</span></div>
+                <ul class="lista-caracteristicas">
+                    <li>✓ Cerámica de alta calidad</li>
+                    <li>✓ Resistente al microondas</li>
+                    <li>✓ Impresión a todo color</li>
+                    <li>✓ Caja individual incluida</li>
                 </ul>
-                <a href="https://wa.me/TUNUMERODEWHATSAPP?text=Hola,%20me%20interesan%20las%20tazas%20blancas" target="_blank" class="btn-colorido w-100" style="text-align: center;">Lo quiero</a>
+                <a href="https://wa.me/522213573007?text=¡Hola!%20Me%20interesa%20pedir%20la%20Taza%20Blanca%20de%2011oz%20por%20$80%20MXN." target="_blank" class="btn-acento w-100" style="text-align: center;">Lo quiero</a>
             </div>
 
-            <div class="card pop-in delay-2">
-                <div class="icono-servicio">
+            <div class="card-precio pop-in delay-1">
+                <div class="icono-precio magenta">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M20.38 3.46 16 2a8 8 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"></path>
                     </svg>
                 </div>
                 <h3>Playera Blanca (Tacto Algodón)</h3>
-                <p class="precio" style="font-size: 2rem; font-weight: 700; color: var(--acento); margin: 15px 0;">$150 MXN</p>
-                <ul style="text-align: left; margin-bottom: 20px; line-height: 1.8; list-style-position: inside;">
-                    <li>✔ Tela suave tacto algodón</li>
-                    <li>✔ Tallas CH, M, G, XG</li>
-                    <li>✔ Sublimación tamaño A4</li>
-                    <li>✔ No se despinta con las lavadas</li>
+                <div class="precio">$150 <span>MXN</span></div>
+                <ul class="lista-caracteristicas">
+                    <li>✓ Tela suave tacto algodón</li>
+                    <li>✓ Tallas CH, M, G, XG</li>
+                    <li>✓ Sublimación tamaño A4</li>
+                    <li>✓ No se despinta con las lavadas</li>
                 </ul>
-                <a href="https://wa.me/TUNUMERODEWHATSAPP?text=Hola,%20me%20interesan%20las%20playeras" target="_blank" class="btn-colorido w-100" style="text-align: center;">Lo quiero</a>
+                <a href="https://wa.me/522213573007?text=¡Hola!%20Me%20interesa%20pedir%20la%20Playera%20Blanca%20tacto%20algodón%20por%20$150%20MXN." target="_blank" class="btn-acento w-100" style="text-align: center;">Lo quiero</a>
             </div>
 
-            <div class="card pop-in delay-3">
-                <div class="icono-servicio">
+            <div class="card-precio pop-in delay-2">
+                <div class="icono-precio amarillo">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
-                        <path d="M5 3v4"></path>
-                        <path d="M19 17v4"></path>
-                        <path d="M3 5h4"></path>
-                        <path d="M17 19h4"></path>
+                        <path d="M12 2l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"></path>
                     </svg>
                 </div>
                 <h3>Metro de Impresión DTF</h3>
-                <p class="precio" style="font-size: 2rem; font-weight: 700; color: var(--acento); margin: 15px 0;">$250 MXN</p>
-                <ul style="text-align: left; margin-bottom: 20px; line-height: 1.8; list-style-position: inside;">
-                    <li>✔ Ancho de 58 cm</li>
-                    <li>✔ Colores vivos y blanco opaco</li>
-                    <li>✔ Listo para planchar</li>
-                    <li>✔ Ideal para algodón y oscuros</li>
+                <div class="precio">$250 <span>MXN</span></div>
+                <ul class="lista-caracteristicas">
+                    <li>✓ Ancho de 58 cm</li>
+                    <li>✓ Colores vivos y blanco opaco</li>
+                    <li>✓ Listo para planchar</li>
+                    <li>✓ Ideal para algodón y oscuros</li>
                 </ul>
-                <a href="https://wa.me/TUNUMERODEWHATSAPP?text=Hola,%20quiero%20cotizar%20impresión%20DTF" target="_blank" class="btn-colorido w-100" style="text-align: center;">Lo quiero</a>
+                <a href="https://wa.me/522213573007?text=¡Hola!%20Me%20interesa%20pedir%20el%20Metro%20de%20Impresión%20DTF%20por%20$250%20MXN." target="_blank" class="btn-acento w-100" style="text-align: center;">Lo quiero</a>
             </div>
 
         </div>
     </section>
+    <footer class="footer-principal" style="margin-top: 40px;">
+        <div class="contenedor footer-grid">
+            <div class="footer-col branding">
+                <img src="img/20260409t_8.57.21_1.png" alt="Two Ink Logo" style="height: 35px; margin-bottom: 15px;">
+                <p>Impresión y personalización de alta calidad para marcas y emprendedores.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="index.html#inicio">Inicio</a></li>
+                    <li><a href="index.html#nosotros">Nosotros</a></li>
+                    <li><a href="index.html#productos">Productos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>📞 +52 221 357 3007</p>
+                <p>✉️ hola@twoink.com</p>
+                <p>📍 Puebla, México</p>
+            </div>
+        </div>
+        <div class="footer-bottom contenedor">
+            <p>© 2026 Two Ink. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos | Two Ink</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/20260409t_8.57.21_1.png">
+</head>
+<body>
+
+    <nav class="nav-principal">
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/20260409t_8.57.21_1.png" alt="Two Ink Logo" style="height: 45px;">
+            </a>
+        </div>
+        
+        <button class="menu-hamburguesa" aria-label="Abrir menú">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+
+        <ul class="nav-enlaces">
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="index.html#nosotros">Nosotros</a></li>
+            <li><a href="servicios.html" style="color: var(--texto-principal);">Servicios</a></li>
+            <li><a href="index.html#productos">Productos</a></li>
+            <li><a href="index.html#portafolio">Portafolio</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+
+        <a href="index.html#contacto" class="btn-acento nav-btn">Cotizar ahora</a>
+    </nav>
+
+    <section class="seccion-header pop-in" style="margin-top: 80px; margin-bottom: 40px;">
+        <h1 class="titulo-seccion">Catálogo de <span class="color-text">Productos</span></h1>
+        <p style="color: var(--texto-secundario); font-size: 1.1rem; margin-top: 15px;">Conoce nuestras opciones de personalización, características y precios.</p>
+    </section>
+
+    <section class="contenedor" style="padding-top: 0;">
+        <div class="grid-3">
+            
+            <div class="card-precio pop-in">
+                <div class="icono-precio cian">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                        <line x1="6" y1="1" x2="6" y2="4"></line>
+                        <line x1="10" y1="1" x2="10" y2="4"></line>
+                        <line x1="14" y1="1" x2="14" y2="4"></line>
+                    </svg>
+                </div>
+                <h3>Taza Blanca 11oz</h3>
+                <div class="precio">$80 <span>MXN</span></div>
+                <ul class="lista-caracteristicas">
+                    <li>✓ Cerámica de alta calidad</li>
+                    <li>✓ Resistente al microondas</li>
+                    <li>✓ Impresión a todo color</li>
+                    <li>✓ Caja individual incluida</li>
+                </ul>
+                <a href="https://wa.me/522213573007?text=¡Hola!%20Me%20interesa%20pedir%20la%20Taza%20Blanca%20de%2011oz%20por%20$80%20MXN." target="_blank" class="btn-acento w-100" style="text-align: center;">Lo quiero</a>
+            </div>
+
+            <div class="card-precio pop-in delay-1">
+                <div class="icono-precio magenta">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.38 3.46 16 2a8 8 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"></path>
+                    </svg>
+                </div>
+                <h3>Playera Blanca (Tacto Algodón)</h3>
+                <div class="precio">$150 <span>MXN</span></div>
+                <ul class="lista-caracteristicas">
+                    <li>✓ Tela suave tacto algodón</li>
+                    <li>✓ Tallas CH, M, G, XG</li>
+                    <li>✓ Sublimación tamaño A4</li>
+                    <li>✓ No se despinta con las lavadas</li>
+                </ul>
+                <a href="https://wa.me/522213573007?text=¡Hola!%20Me%20interesa%20pedir%20la%20Playera%20Blanca%20tacto%20algodón%20por%20$150%20MXN." target="_blank" class="btn-acento w-100" style="text-align: center;">Lo quiero</a>
+            </div>
+
+            <div class="card-precio pop-in delay-2">
+                <div class="icono-precio amarillo">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2l3 7 7 3-7 3-3 7-3-7-7-3 7-3z"></path>
+                    </svg>
+                </div>
+                <h3>Metro de Impresión DTF</h3>
+                <div class="precio">$250 <span>MXN</span></div>
+                <ul class="lista-caracteristicas">
+                    <li>✓ Ancho de 58 cm</li>
+                    <li>✓ Colores vivos y blanco opaco</li>
+                    <li>✓ Listo para planchar</li>
+                    <li>✓ Ideal para algodón y oscuros</li>
+                </ul>
+                <a href="https://wa.me/522213573007?text=¡Hola!%20Me%20interesa%20pedir%20el%20Metro%20de%20Impresión%20DTF%20por%20$250%20MXN." target="_blank" class="btn-acento w-100" style="text-align: center;">Lo quiero</a>
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer-principal" style="margin-top: 40px;">
+        <div class="contenedor footer-grid">
+            <div class="footer-col branding">
+                <img src="img/20260409t_8.57.21_1.png" alt="Two Ink Logo" style="height: 35px; margin-bottom: 15px;">
+                <p>Impresión y personalización de alta calidad para marcas y emprendedores.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Enlaces rápidos</h4>
+                <ul>
+                    <li><a href="index.html#inicio">Inicio</a></li>
+                    <li><a href="index.html#nosotros">Nosotros</a></li>
+                    <li><a href="index.html#productos">Productos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p>📞 +52 221 357 3007</p>
+                <p>✉️ hola@twoink.com</p>
+                <p>📍 Puebla, México</p>
+            </div>
+        </div>
+        <div class="footer-bottom contenedor">
+            <p>© 2026 Two Ink. Todos los derechos reservados.</p>
+        </div>
+    </footer>
 
     <script src="main.js"></script>
 </body>
